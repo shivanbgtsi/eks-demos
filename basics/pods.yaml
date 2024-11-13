@@ -16,3 +16,6 @@ spec:
 # kubectl get nodes
 # kubectl get ns
 # kubectl apply -f pods.yaml
+# kubectl delete pod  nginx-pod
+# alias k=kubectl
+# kubectl logs <pod-name>

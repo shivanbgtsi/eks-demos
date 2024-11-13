@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+# kubectl get pods
+# kubectl get nodes
+# kubectl get ns
+# kubectl apply -f replicaset.yaml
+# kubectl delete rs nginx-replicaset
+# kubectl logs <pod-name>
