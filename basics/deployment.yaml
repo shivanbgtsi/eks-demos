@@ -17,3 +17,7 @@ spec:
           image: nginx:latest
           ports:
             - containerPort: 80
+# kubectl get deployment
+# kubectl scale deployment myapp-deployment --replicas=5
+# kubectl get deployment
+# kubectl get pods
