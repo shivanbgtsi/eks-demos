@@ -23,3 +23,4 @@ spec:
 # kubectl apply -f replicaset.yaml
 # kubectl delete rs nginx-replicaset
 # kubectl logs <pod-name>
+# kubectl scale replicaset nginx-replicaset --replicas=2
