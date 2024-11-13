@@ -9,3 +9,6 @@ spec:
     - port: 80
       targetPort: 80
   type: ClusterIP
+# kubectl apply -f service.yaml
+# kubectl run test-pod --rm -it --image=busybox /bin/sh
+# wget -qO- http://myapp-cluster-ip-service
